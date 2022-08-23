@@ -1,0 +1,69 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.hero .hero-content {
+  text-align: center;
+  position: absolute;
+}
+
+.hero .overlay-itro {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+}
+.hero .hero-title {
+  color: rgb(1, 232, 3);
+  font-weight: 600;
+  font-size: 3rem;
+  /* border: 5px solid rgb(1, 232, 3); */
+}
+
+@media (min-width: 768px) {
+  .hero .hero-title {
+    font-size: 4.5rem;
+  }
+}
+
+.hero .hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.bg-image {
+  /* background-image: url("../assets/splash-bg.gif"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.display-table {
+  width: 40%;
+  height: 100%;
+  display: table;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.mint-nft-container{
+  cursor: pointer;
+    color: rgb(0, 255, 17);
+    border-radius: 15px 15px;
+    padding: 15px;
+    border: 2px solid rgb(0, 255, 17);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 80px;
+}
