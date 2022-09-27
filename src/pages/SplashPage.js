@@ -5,6 +5,7 @@ import "./bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
 import SplashCards from "../components/SplashCards";
 import Threepanel from "../assets/threepanel.png";
+import HeroBannerGif from "../assets/splash-bg2.gif";
 
 function SplashPage(props) {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ function SplashPage(props) {
     <>
       <section id="hero-banner">
         <div className="banner-inner">
-          <div className="container"></div>
+          <img src={HeroBannerGif} className="banner-gif"/>
         </div>
       </section>
       <section id="services">

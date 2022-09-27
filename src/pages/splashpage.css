@@ -133,17 +133,36 @@ ul.nostyle i {
 }
 
 #hero-banner {
+	position: relative;
+	display: flex;
+	justify-content: right;
   overflow: hidden;
   height: 100vh;
-  background: url("../assets/splash-bg2.gif");
-  opacity: 0.95;
-  background-size: auto;
   color: #fff;
+	opacity: 0.95;
+
+	background-color: #392942;
 }
+
+#hero-banner .banner-inner {
+	aspect-ratio: 16/9;
+}
+
+#hero-banner .banner-gif {
+	height: 100%;
+}
+
+/* Ultrawide Support */
+@media only screen and (min-width: 2300px) {
+  #hero-banner {
+		opacity: 1;
+		justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   #hero-banner {
-    background: url("../assets/splash-bg2.gif");
-    background-position: right;
+
   }
 }
 
@@ -153,14 +172,7 @@ ul.nostyle i {
   background-position: 50% 0;
   background-size: cover;
 }
-#hero-banner.banner-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #202225;
-}
+
 #services h2 {
   margin-bottom: 50px;
   font-size: 70px;
