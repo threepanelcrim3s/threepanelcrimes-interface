@@ -5,6 +5,7 @@ import "./bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
 import SplashCards from "../components/SplashCards";
 import Threepanel from "../assets/threepanel.png";
+import BgImg from "../assets/splash-bg2.gif";
 
 function SplashPage(props) {
   const navigate = useNavigate();
@@ -42,13 +43,14 @@ function SplashPage(props) {
                 data-wow-duration="300ms"
                 data-wow-delay="0ms"
               >
-                <SplashCards
-                  title="Own NFT"
-                  description="Do you own a Three Panel Crime NFT? If you do then click
+                <a className="hover">
+                  <SplashCards
+                    title="Own NFT"
+                    description="Do you own a Three Panel Crime NFT? If you do then click
                       here to collect your reward!"
-                  image={Threepanel}
-                />
-
+                    image={Threepanel}
+                  />
+                </a>
                 {/* <NftDetection /> */}
               </div>
               <div
@@ -56,11 +58,16 @@ function SplashPage(props) {
                 data-wow-duration="300ms"
                 data-wow-delay="100ms"
               >
-                <SplashCards
-                  title="Buy NFT"
-                  description="Don't have a Three Panel Crime NFT? Buy one from opensea.io right here!"
-                  image={Threepanel}
-                />
+                <a
+                  href="https://opensea.io/collection/three-panel-crimes"
+                  className="hover"
+                >
+                  <SplashCards
+                    title="Buy NFT"
+                    description="Don't have a Three Panel Crime NFT? Buy one from opensea.io right here!"
+                    image={Threepanel}
+                  />
+                </a>
                 {/* <div className="media service-box">
                   <div className="pull-left">
                     <i className="fa fa-compass"></i>
@@ -81,12 +88,17 @@ function SplashPage(props) {
                 data-wow-duration="300ms"
                 data-wow-delay="200ms"
               >
-                <SplashCards
-                  title="Info"
-                  description="Morbi vitae tortor tempus, placerat leo et, suscipit
-                  lectus. Phasellus ut euismod "
-                  image={Threepanel}
-                />
+                <a
+                  href="https://twitter.com/3panelcrimes/status/1572252232330121216"
+                  className="hover"
+                >
+                  <SplashCards
+                    title="Info"
+                    description="New limited edition 26/33 avail. 'Little Monsters - 1'
+Open listing here"
+                    image={Threepanel}
+                  />
+                </a>
                 {/* <div className="media service-box">
                   <div className="pull-left">
                     <i className="fa fa-database"></i>

@@ -6,7 +6,7 @@ import {
   CardImage,
   CardSubtitle,
 } from "@progress/kendo-react-layout";
-import Threepanel from "../assets/threepanel.jpg";
+import Threepanel from "../assets/threepanel.png";
 
 const SplashCards = (props) => {
   return (
