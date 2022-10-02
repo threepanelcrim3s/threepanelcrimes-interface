@@ -6,6 +6,9 @@ import { useNavigate } from "react-router-dom";
 import SplashCards from "../components/SplashCards";
 import Threepanel from "../assets/threepanel.png";
 import BgImg from "../assets/splash-bg2.gif";
+import Skull from "../assets/skull.png";
+import Wave from "../assets/wave.png";
+import Hug from "../assets/hug.png";
 
 function SplashPage(props) {
   const navigate = useNavigate();
@@ -48,7 +51,7 @@ function SplashPage(props) {
                     title="Own NFT"
                     description="Do you own a Three Panel Crime NFT? If you do then click
                       here to collect your reward!"
-                    image={Threepanel}
+                    image={Skull}
                   />
                 </a>
                 {/* <NftDetection /> */}
@@ -65,7 +68,7 @@ function SplashPage(props) {
                   <SplashCards
                     title="Buy NFT"
                     description="Don't have a Three Panel Crime NFT? Buy one from opensea.io right here!"
-                    image={Threepanel}
+                    image={Wave}
                   />
                 </a>
                 {/* <div className="media service-box">
@@ -96,7 +99,7 @@ function SplashPage(props) {
                     title="Info"
                     description="New limited edition 26/33 avail. 'Little Monsters - 1'
 Open listing here"
-                    image={Threepanel}
+                    image={Hug}
                   />
                 </a>
                 {/* <div className="media service-box">
