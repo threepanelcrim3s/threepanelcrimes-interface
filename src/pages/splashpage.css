@@ -146,18 +146,35 @@ ul.nostyle i {
 
 #hero-banner {
   overflow: hidden;
-  height: 1080px;
+  height: 100vh;
   background-image: url("../assets/splash-bg2.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.95;
   color: #fff;
 }
 @media only screen and (max-width: 480px) {
   #hero-banner {
     background: url("../assets/splash-bg2.gif");
     background-position: right;
+  }
+}
+
+.bottom-right {
+  position: absolute;
+  right: 20px;
+  width: 50px;
+}
+.bottom-right img {
+  border-radius: 25px;
+  animation: rotation 4s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
   }
 }
 

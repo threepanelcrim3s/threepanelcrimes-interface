@@ -5,7 +5,7 @@ import "./bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
 import SplashCards from "../components/SplashCards";
 import Threepanel from "../assets/threepanel.png";
-import BgImg from "../assets/splash-bg2.gif";
+import Pepe from "../assets/pepe.png";
 import Skull from "../assets/skull.png";
 import Wave from "../assets/wave.png";
 import Hug from "../assets/hug.png";
@@ -30,13 +30,7 @@ function SplashPage(props) {
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
-              <h2 className="hero-title">
-                THREE PANEL{" "}
-                <span style={{ cursor: "pointer" }} onClick={easterEggUrl}>
-                  C
-                </span>
-                RIMES
-              </h2>
+              <h2 className="hero-title">THREE PANEL CRIMES</h2>
             </div>
           </div>
           <div className="row">
@@ -46,13 +40,11 @@ function SplashPage(props) {
                 data-wow-duration="300ms"
                 data-wow-delay="0ms"
               >
-                <a className="hover">
-                  <SplashCards
-                    title="Own NFT"
-                    description="Do you own a Three Panel Crime NFT? If you do then click
-                      here to collect your reward!"
-                    image={Skull}
-                  />
+                <a
+                  href="https://twitter.com/3panelcrimes?s=20&t=7_V_4NtFw7sNqFNd5B2mVA"
+                  className="hover"
+                >
+                  <SplashCards title="Twitter" image={Skull} />
                 </a>
                 {/* <NftDetection /> */}
               </div>
@@ -62,14 +54,10 @@ function SplashPage(props) {
                 data-wow-delay="100ms"
               >
                 <a
-                  href="https://opensea.io/collection/three-panel-crimes"
+                  href="https://deca.art/threepanelcrimes/collections"
                   className="hover"
                 >
-                  <SplashCards
-                    title="Buy NFT"
-                    description="Don't have a Three Panel Crime NFT? Buy one from opensea.io right here!"
-                    image={Wave}
-                  />
+                  <SplashCards title="Deca" image={Wave} />
                 </a>
                 {/* <div className="media service-box">
                   <div className="pull-left">
@@ -91,16 +79,8 @@ function SplashPage(props) {
                 data-wow-duration="300ms"
                 data-wow-delay="200ms"
               >
-                <a
-                  href="https://twitter.com/3panelcrimes/status/1572252232330121216"
-                  className="hover"
-                >
-                  <SplashCards
-                    title="Info"
-                    description="New limited edition 26/33 avail. 'Little Monsters - 1'
-Open listing here"
-                    image={Hug}
-                  />
+                <a href="https://discord.gg/MBdWJXdphq" className="hover">
+                  <SplashCards title="Discord" image={Hug} />
                 </a>
                 {/* <div className="media service-box">
                   <div className="pull-left">
@@ -117,6 +97,11 @@ Open listing here"
                 </div> */}
               </div>
             </div>
+          </div>
+          <div className="bottom-right">
+            <a href="https://3-panel-crimes.vercel.app/" target="_blank">
+              <img src={Pepe} alt="threepanel" />
+            </a>
           </div>
         </div>
       </section>
