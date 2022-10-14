@@ -44,7 +44,7 @@ function SplashPage(props) {
                   href="https://twitter.com/3panelcrimes?s=20&t=7_V_4NtFw7sNqFNd5B2mVA"
                   className="hover"
                 >
-                  <SplashCards title="Twitter" image={Skull} />
+                  <SplashCards title="TWITTER" image={Skull} />
                 </a>
                 {/* <NftDetection /> */}
               </div>
@@ -57,7 +57,7 @@ function SplashPage(props) {
                   href="https://deca.art/threepanelcrimes/collections"
                   className="hover"
                 >
-                  <SplashCards title="Deca" image={Wave} />
+                  <SplashCards title="DECA" image={Wave} />
                 </a>
                 {/* <div className="media service-box">
                   <div className="pull-left">
@@ -80,7 +80,7 @@ function SplashPage(props) {
                 data-wow-delay="200ms"
               >
                 <a href="https://discord.gg/MBdWJXdphq" className="hover">
-                  <SplashCards title="Discord" image={Hug} />
+                  <SplashCards title="DISCORD" image={Hug} />
                 </a>
                 {/* <div className="media service-box">
                   <div className="pull-left">
