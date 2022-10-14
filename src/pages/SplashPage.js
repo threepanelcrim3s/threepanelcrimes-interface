@@ -53,11 +53,8 @@ function SplashPage(props) {
                 data-wow-duration="300ms"
                 data-wow-delay="100ms"
               >
-                <a
-                  href="https://deca.art/threepanelcrimes/collections"
-                  className="hover"
-                >
-                  <SplashCards title="DECA" image={Wave} />
+                <a href="https://linktr.ee/threepanelcrimes" className="hover">
+                  <SplashCards title="LINKTREE" image={Wave} />
                 </a>
                 {/* <div className="media service-box">
                   <div className="pull-left">
